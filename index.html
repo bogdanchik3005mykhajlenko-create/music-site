@@ -44,7 +44,6 @@
     .col2 { flex: 2 1 50%; background: #fff0e0; }
     .col3 { flex: 1 1 25%; background: #d0e8f5; }
 
-    /* IMAGES */
     img.local-icon,
     img.music,
     img.populyarni_vykonavci {
@@ -54,12 +53,10 @@
       margin: 10px auto;
     }
 
-    /* TABLE WRAPPER */
     .table-wrapper {
       overflow-x: auto;
     }
 
-    /* FOOTER */
     .footer {
       background: #444;
       color: #fff;
@@ -74,10 +71,10 @@
         flex-direction: column;
       }
 
-      /* ✅ Правильний порядок блоків на телефоні */
-      .col2 { order: 1; } /* Популярні виконавці */
-      .col1 { order: 2; } /* Музичні течії */
-      .col3 { order: 3; } /* Музичні сайти */
+      /* ПРАВИЛЬНИЙ ПОРЯДОК БЛОКІВ НА ТЕЛЕФОНІ */
+      .col2 { order: 1; }
+      .col1 { order: 2; }
+      .col3 { order: 3; }
 
       .col1, .col2, .col3 {
         flex: 1 1 100%;
@@ -126,19 +123,19 @@
     <p>Течії, виконавці та музичні платформи</p>
   </header>
 
+  <!-- ✅ МЕНЮ ТЕПЕР ВЕДЕ НА БЛОКИ НА ЦІЙ ЖЕ СТОРІНЦІ -->
   <nav class="menu">
     <ul>
-      <li><a href="Меню/Посилання на блоки меню/Музичні течії.html">Музичні течії</a></li>
-      <li><a href="Меню/Посилання на блоки меню/Популярні виконавці.html">Популярні виконавці</a></li>
-      <li><a href="Меню/Посилання на блоки меню/Музичні платформи.html">Музичні платформи</a></li>
-      <li><a href="Меню/Посилання на блоки меню/Євробачення.html">Євробачення</a></li>
+      <li><a href="#tecii">Музичні течії</a></li>
+      <li><a href="#vykonavci">Популярні виконавці</a></li>
+      <li><a href="#platformy">Музичні платформи</a></li>
     </ul>
   </nav>
 
   <main class="container">
 
     <!-- LEFT COLUMN -->
-    <section class="col1">
+    <section class="col1" id="tecii">
       <h2>Музичні течії</h2>
       <img class="local-icon" src="Фото/Music.icon.png" alt="Music Icon">
 
@@ -168,7 +165,7 @@
     </section>
 
     <!-- CENTER COLUMN -->
-    <section class="col2">
+    <section class="col2" id="vykonavci">
       <h2>Популярні виконавці</h2>
 
       <img class="populyarni_vykonavci" src="Фото/populyarni_vykonavci.png" alt="concert_energy_photo">
@@ -242,7 +239,7 @@
     </section>
 
     <!-- RIGHT COLUMN -->
-    <aside class="col3">
+    <aside class="col3" id="platformy">
       <h3>Музичні сайти</h3>
 
       <img class="music" src="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg">
